@@ -26,17 +26,17 @@ numbers.forEach(function (el) {
 // 4
 // 1.5
 // ...etc.
-console.log(numbers.map(curr => curr / 2))
+// console.log(numbers.map(curr => curr / 2))
 
 // Question 3: Using the getFirstLetter function below as your callback,
 //             use map to create an array contaning the first letter of
 //             every word from the words array.
 
-function getFirstLetter(word) {
+function getFirstLetter (word) {
   return word[0]
 }
 
-const firstLetters = words.map( curr => getFirstLetter(curr))
+const firstLetters = words.map(curr => getFirstLetter(curr))
 
 // console.log(firstLetters)
 
@@ -44,25 +44,32 @@ const firstLetters = words.map( curr => getFirstLetter(curr))
 //             from the words array.
 
 const lastLetters = words.map(curr => curr[curr.length - 1])
-console.log(lastLetters)
+// console.log(lastLetters)
 
-/**
 // Question 5: Use map to create an array containing the reversed version of each word
 //             from the word array. For example, the first entry will be 'supmawyttac'.
 
-const reversedWords = words.map(function(word) {
+const reversedWords = words.map(function (word) {
   return word
-    .split("")
+    .split('')
     .reverse()
-    .join("")
+    .join('')
 })
+
+const reversedWords1 = words.map(curr => curr.split('').reverse().join(''))
+
+// console.log(reversedWords1)
 
 // Question 6: Use map to create an array containing the absolute value of every number
 //             in the numbers array.
 
-const absoluteNumbers = numbers.map(function(num) {
+const absoluteNumbers = numbers.map(function (num) {
   return Math.abs(num)
 })
+
+const absoluteNumbers1 = numbers.map(curr => Math.abs(curr))
+console.log(absoluteNumbers1)
+
 
 // Question 7: Use map to create an array containing each number from the numbers array
 //             rounded to the nearest 10. For example: 10, 0, 20, 0, etc.
@@ -70,6 +77,7 @@ const absoluteNumbers = numbers.map(function(num) {
 const roundedToTenNumbers = numbers.map(function(num) {
   return Math.ceil(num / 10) * 10
 })
+
 
 // Question 8: Use map to create an array that contains only the words from the words
 //             array containing 's'. All other words should be replaced with null.
@@ -95,6 +103,11 @@ function sum(currentTotal, nextNumber) {
 
 const sumTotal = numbers.reduce(sum)
 
+let addResult = numbers.reduce((acc, curr) => acc + curr)
+
+console.log(addResult,'addResult')
+
+
 // Question 10: Use reduce to find the word from the words array that is last in the alphabet.
 
 const alphabeticallyLast = words.reduce(function(acc, curr, index, array) {
@@ -102,4 +115,13 @@ const alphabeticallyLast = words.reduce(function(acc, curr, index, array) {
 })
 
 console.log(alphabeticallyLast)
-*/
+
+const alphabeticallyLast1 = words.reduce((acc, curr) => {
+  if (acc > curr) {
+    return acc
+  } else {
+    return curr
+  }
+})
+
+console.log(alphabeticallyLast1, 'alpha')
