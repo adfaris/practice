@@ -10,38 +10,43 @@ const numbers = [8, 3, 22, 0, -73, 15]
 
 // Question 1:
 // Use forEach to console.log all the words in the words array. Do not write a for loop.
-words.forEach(curr => console.log(curr))
+// words.forEach(curr => console.log(curr))
 
 words.forEach(function (el) {
-  console.log(el)
+  // console.log(el)
 })
 
-numbers.forEach(element => console.log(element))
+// numbers.forEach(element => console.log(element))
 
 numbers.forEach(function (el) {
-  console.log(el)
+  // console.log(el)
 })
 // Question 2: Use forEach to console.log the each number in the numbers array divided by two
 // It should console.log:
 // 4
 // 1.5
 // ...etc.
+console.log(numbers.map(curr => curr / 2))
 
 // Question 3: Using the getFirstLetter function below as your callback,
 //             use map to create an array contaning the first letter of
 //             every word from the words array.
-/**
-function getFirstLetter(word) {}
 
-const firstLetters = words.map()
+function getFirstLetter(word) {
+  return word[0]
+}
+
+const firstLetters = words.map( curr => getFirstLetter(curr))
+
+// console.log(firstLetters)
 
 // Question 4: Use map to create an array containing the last letter of every word
 //             from the words array.
 
-const lastLetters = words.map(function cb(current) {
-  return current[current.length - 1]
-})
+const lastLetters = words.map(curr => curr[curr.length - 1])
+console.log(lastLetters)
 
+/**
 // Question 5: Use map to create an array containing the reversed version of each word
 //             from the word array. For example, the first entry will be 'supmawyttac'.
 
