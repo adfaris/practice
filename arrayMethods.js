@@ -84,7 +84,7 @@ const roundedToTenNumbers = numbers.map(function(num) {
 //             For example: 'cattywampus', 'snickersnee', null, etc.
 
 const wordsWithS = words.map(function(word) {
-  if (word.includes("s")) {
+  if (word.includes('s')) {
     return word
   } else {
     return null
