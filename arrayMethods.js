@@ -13,7 +13,7 @@ const numbers = [8, 3, 22, 0, -73, 15]
 // words.forEach(curr => console.log(curr))
 
 words.forEach(function (el) {
-  // console.log(el)
+  console.log(el)
 })
 
 // numbers.forEach(element => console.log(element))
