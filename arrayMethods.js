@@ -19,7 +19,7 @@ words.forEach(function (el) {
 // numbers.forEach(element => console.log(element))
 
 numbers.forEach(function (el) {
-  // console.log(el)
+  console.log(el)
 })
 // Question 2: Use forEach to console.log the each number in the numbers array divided by two
 // It should console.log:
