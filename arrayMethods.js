@@ -16,6 +16,8 @@ words.forEach(function (el) {
   console.log(el)
 })
 
+words.forEach(element => console.log(element))
+
 // numbers.forEach(element => console.log(element))
 
 numbers.forEach(function (el) {
