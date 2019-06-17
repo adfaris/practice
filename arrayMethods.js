@@ -109,7 +109,6 @@ let addResult = numbers.reduce((acc, curr) => acc + curr)
 
 console.log(addResult,'addResult')
 
-
 // Question 10: Use reduce to find the word from the words array that is last in the alphabet.
 
 const alphabeticallyLast = words.reduce(function(acc, curr, index, array) {
