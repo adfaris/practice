@@ -91,26 +91,28 @@ inventory.forEach(car => {
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCarMake = inventory[inventory.length - 1].car_make
-let lastCarModel = inventory[inventory.length - 1].car_model
-// console.log(`${lastCarMake} ${lastCarModel}`)
+const lastCarMake = inventory[inventory.length - 1].car_make
+const lastCarModel = inventory[inventory.length - 1].car_model
+console.log(`${lastCarMake} ${lastCarModel}`)
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 
 // The way I understood the question
 
-// let carModels = []
+// const carModels = []
 // for (let i = 0; i < inventory.length; i++) {
 //   carModels.push(inventory[i].car_model)
 // }
 // carModels.sort()
 // console.log(carModels)
 
+// console.log(inventory.carModel.sort())
+
 function compare (a, b) {
   // Use toUpperCase() to ignore character casing
-  const carModelA = a.car_model.toUpperCase()
-  const carModelB = b.car_model.toUpperCase()
+  const carModelA = a.car_model.toLowerCase()
+  const carModelB = b.car_model.toLowerCase()
 
   let comparison = 0
   if (carModelA > carModelB) {
@@ -121,7 +123,7 @@ function compare (a, b) {
   return comparison
 }
 
-// console.log(inventory.sort(compare))
+console.log(inventory.sort(compare))
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
