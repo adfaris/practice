@@ -100,14 +100,14 @@ console.log(`${lastCarMake} ${lastCarModel}`)
 
 // The way I understood the question
 
-// const carModels = []
-// for (let i = 0; i < inventory.length; i++) {
-//   carModels.push(inventory[i].car_model)
-// }
-// carModels.sort()
-// console.log(carModels)
+const carModels = []
+for (let i = 0; i < inventory.length; i++) {
+  carModels.push(inventory[i].car_model)
+}
+carModels.sort()
+console.log(carModels)
 
-// console.log(inventory.carModel.sort())
+console.log(inventory.carModel.sort())
 
 function compare (a, b) {
   // Use toUpperCase() to ignore character casing
