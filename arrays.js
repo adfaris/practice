@@ -147,7 +147,7 @@ for (let i = 0; i < carYears.length; i++) {
     oldCars.push(carYears[i])
   }
 }
-// console.log(oldCars.length)
+console.log(oldCars.length)
 
 oldCars = carYears.filter(carYear => carYear < 2000)
 console.log(oldCars.length)
@@ -161,6 +161,7 @@ for (let i = 0; i < inventory.length; i++) {
     BMWAndAudi.push(inventory[i])
   }
 }
-// console.log(JSON.stringify(BMWAndAudi))
+console.log(JSON.stringify(BMWAndAudi))
+
 BMWAndAudi = inventory.filter(car => car.car_make === 'BMW' || car.car_make === 'Audi')
 console.log(BMWAndAudi)
