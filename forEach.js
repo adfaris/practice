@@ -17,7 +17,7 @@
 // //     // map, filter, reduce, forEac
 
 
-// // ['a', 'b', 'c'].forEach(console.log)
+['a', 'b', 'c'].forEach(console.log)
 
 // elements.forEach(element => {
 //     console.log(element)
