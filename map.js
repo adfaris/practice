@@ -6,7 +6,7 @@
 
 const names = ['Josiah', 'Zoe', 'Dina', 'A.D.']
 const nums = [3, 5, 3, 5, 6, 8, 90, 78]
-let result = []
+let result = ''
 
 const callback = (currentValue, index, array) => {
   console.log(currentValue, index, array)
