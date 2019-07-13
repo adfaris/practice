@@ -1,4 +1,6 @@
-Array.prototype.forEach = console.log
+const numbers = [3, 4, 5, 6, 79, 99, 999, 300]
 
-Array.forEach(`Hi my name is A.D. Faris`)
-
+const callback = (current, index, array, thisArg) => {
+  console.log(current, index, array, this)
+}
+numbers.forEach(callback)
