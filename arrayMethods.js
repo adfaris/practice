@@ -12,23 +12,34 @@ const numbers = [8, 3, 22, 0, -73, 15]
 // Use forEach to console.log all the words in the words array. Do not write a for loop.
 // words.forEach(curr => console.log(curr))
 
-words.forEach(function (el) {
-  console.log(el)
+words.forEach(function (word) {
+  console.log(word)
 })
 
-words.forEach(element => console.log(element))
+words.forEach((word) => {
+  console.log(word)
+})
+
+words.forEach(word => console.log(word)) // when there is one argument only, there is an explicit return
 
 // numbers.forEach(element => console.log(element))
 
-numbers.forEach(function (el) {
-  console.log(el)
+numbers.forEach(function (number) {
+  console.log(number)
 })
 // Question 2: Use forEach to console.log the each number in the numbers array divided by two
 // It should console.log:
 // 4
 // 1.5
 // ...etc.
-// console.log(numbers.map(curr => curr / 2))
+console.log(numbers.map(number => number / 2))
+
+const numDividedBy2 = (arr) => {
+  arr.forEach((num) => {
+    return num / 2
+  })
+}
+console.log(numDividedBy2(numbers))
 
 // Question 3: Using the getFirstLetter function below as your callback,
 //             use map to create an array contaning the first letter of
