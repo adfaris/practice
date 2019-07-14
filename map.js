@@ -2,6 +2,7 @@
  * var new_array = arr.map(function callback(currentValue[, index[, array]]) {
     // Return element for new_array
 }[, thisArg])
+  returns a new array
  */
 
 const names = ['Josiah', 'Zoe', 'Dina', 'A.D.']

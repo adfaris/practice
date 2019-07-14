@@ -1,5 +1,6 @@
 /**
  * var newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
+ * returns a new array contaiing the filtered array
  */
 
 // const names = ['sam', 'Maz', 'Dina']
