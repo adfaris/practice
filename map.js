@@ -14,6 +14,6 @@ const callback = (currentValue, index, array) => {
   return currentValue
 }
 
-result = nums.map(callback)
+console.log(nums.map(callback))
 
-console.log(result)
+// console.log(result)
