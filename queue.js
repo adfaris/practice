@@ -22,6 +22,12 @@ class Queue {
       console.log(item)
     })
   }
+  firstItem () {
+    if(this.isEmpty()) {
+      return 'Queue is empty'
+    }
+    return this._storage[0]
+  }
 }
 
 const queue = new Queue()
@@ -36,3 +42,4 @@ queue.printQueue()
 queue.dequeue()
 
 console.log(queue)
+console.log(queue.firstItem())
