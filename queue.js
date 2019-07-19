@@ -17,6 +17,11 @@ class Queue {
   isEmpty () {
     return this._storage.length === 0
   }
+  printQueue () {
+    this._storage.forEach(item => {
+      console.log(item)
+    })
+  }
 }
 
 const queue = new Queue()
@@ -26,6 +31,7 @@ queue.enqueue(2)
 queue.enqueue(3)
 console.log(queue.isEmpty())
 console.log(queue.size)
+queue.printQueue()
 
 queue.dequeue()
 
