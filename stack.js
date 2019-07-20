@@ -14,6 +14,11 @@ class Stack {
   remove () {
     return this._storage.pop()
   }
+  printStack () {
+    this._storage.forEach(item => {
+      console.log(item)
+    })
+  }
 }
 
 const stack = new Stack()
@@ -27,3 +32,5 @@ console.log(stack.size)
 stack.remove()
 
 console.log(stack)
+stack.printStack()
+
