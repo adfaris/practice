@@ -27,6 +27,12 @@ class LinkeList {
     }
     return false
   }
+  print () {
+    while (this.head != null) {
+      console.log(this.head.data)
+      this.head = this.head.next
+    }
+  }
 }
 const list = new LinkeList()
 list.addNode(5)
@@ -35,3 +41,4 @@ list.addNode(15)
 list.addNode(20)
 console.log(list)
 console.log(list.search(12))
+list.print()
