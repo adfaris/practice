@@ -3,17 +3,19 @@ class Tree {
     this.data = data
     this.children = []
   }
+
   addChild(data) {
     const node = new Tree(data)
     this.children.push(node)
   }
+
   search (searchTerm) {
     let found = false
-    if(this.data === searchTerm) {S
+    if (this.data === searchTerm) {
      found = true
     } else  {
       this.children.forEach((child) => {
-      if(child === searchTerm) {
+      if(child.search(searchTerm)) {
         found = true
         }
      })
@@ -33,3 +35,4 @@ tree.children[1].addChild('zao an');
 
 console.log(tree.search('zao an'));
 console.log(tree.data)
+console.log(tree.children)
