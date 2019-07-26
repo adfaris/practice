@@ -18,9 +18,19 @@ class LinkedList {
       this.tail = node
     }
   }
+
+  search (searchValue) {
+    if (this.head === null) return false
+    while (this.head != null) {
+      if (this.head.data === searchValue) return true
+      this.head = this.head.next
+    }
+    return false
+  }
 }
 
 const newLlist = new LinkedList()
 newLlist.addNode(5)
 newLlist.addNode(10)
 console.log(newLlist)
+console.log(newLlist.search(5))
