@@ -7,14 +7,14 @@ class LinkedList {
     const node = {
       data: data,
       next: null
-  }
-  if (this.head === null) {
-    this.head = node
+    }
+    if (this.head === null) {
+      this.head = node
     } else {
-        while(this.head.next !== null) {
-            this.head = this.head.next
-        }
-        this.head.next = node
+      while (this.head.next !== null) {
+        this.head = this.head.next
+      }
+      this.head.next = node
     }
   }
 }
