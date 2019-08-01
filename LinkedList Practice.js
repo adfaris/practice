@@ -18,3 +18,12 @@ class LinkedList {
       }
   }
 }
+
+const list = new LinkedList()
+list.addToTail(1)
+list.addToTail(2)
+list.addToTail(3)
+list.addToTail(4)
+list.addToTail(5)
+
+console.log(list)
